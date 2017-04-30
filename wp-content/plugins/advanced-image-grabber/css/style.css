@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+#advanced_image_grabber_frm input{
+	margin-top:10px;
+}
+.aig_img_listbox{
+	margin-top:15px;
+	max-width:100%;
+}
+.aig_img_listbox img{
+	width:130px;
+	height:100px;
+	display:inline-block;
+
+}
+.aig_img_upload_success,.aig_img_upload_failure{
+	width:100%;
+	display:none;
+}
+.aig_img_upload_success img,.aig_img_upload_failure img,.aig_img_upload_success a img{
+	width:130px;
+	height:100px;
+	display:inline-block;
+	margin:8px;
+	padding:5px;
+	border:solid 1px #dddddd;
+	
+}
+.aig_img_upload_success{
+	font-size:0;
+	word-spacing: 0;
+}
