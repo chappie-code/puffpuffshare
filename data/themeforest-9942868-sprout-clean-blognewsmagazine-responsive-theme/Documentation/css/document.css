@@ -1,0 +1,136 @@
+/* -----------------------------------------------------------------------------
+ * Affix
+ * -------------------------------------------------------------------------- */
+.body {
+  position: relative;
+}
+.affix {
+	position: static;
+}
+
+@media (min-width: 992px) {
+	.affix {
+	  width: 213px;
+	  position: fixed;
+	  top: 0;
+	}
+
+	.affix-bottom {
+	  width: inherit;
+	  position: absolute;
+	  top: auto;
+	  bottom: 200px;
+	}
+
+	.affix-top {}
+}
+
+@media (min-width: 1200px) {
+	.affix { width: 263px; }
+}
+
+#sidebar {
+	padding: 30px 0;
+}
+
+/* -----------------------------------------------------------------------------
+ * Nav
+ * -------------------------------------------------------------------------- */
+.bs-sidenav ul {
+	font-size: 0.9em;
+	margin-left: 20px;
+	display: none;
+}
+
+.bs-sidenav a {
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+.bs-sidenav .active > a {
+	font-weight: bold;
+}
+
+.bs-sidenav .active ul {
+	display: block;
+}
+
+.nav>li>a {
+	padding: 4px 10px;
+	font-size: 14px;
+	color: #999;
+}
+
+.nav>li.active a {
+	color: #148f9a;
+}
+
+.nav>li+li>a {
+	border-top: 1px solid #eee;
+}
+
+/* -----------------------------------------------------------------------------
+ * Jumbotron
+ * -------------------------------------------------------------------------- */
+.header {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.header-container {
+	padding: 60px 30px;
+}
+
+.header-button {
+	background-color: #148f9a;
+	color: #fff;
+	float: right;
+	margin-left: 1em;
+}
+.header-button:hover { color: #fff; background-color: #d7ab00; }
+
+
+/* -----------------------------------------------------------------------------
+ * Document
+ * -------------------------------------------------------------------------- */
+ body { line-height: 1.6em; color: #666; }
+ h1,h2,h3,h4,h5,strong { color: #444; }
+ a { color: #148f9a; }
+ a:hover { color: #d7ab00; }
+.page-header { border-bottom: 1px solid #ddd; margin-bottom: 30px; }
+.page-header h1 { font-size: 3em; font-weight: bold; padding-top: 1em; margin-top: 1.5em; }
+.page-header h1#introduction { padding-top: 0; margin-top: 0; }
+.page-header h3 { font-weight: normal; }
+
+.doc-section + .doc-section { margin-top: 60px; }
+.doc-section li { margin: 10px 0; }
+.doc-section img {
+	margin: 15px 0;
+	padding: 5px;
+	border: 1px solid #f5f5f5;
+	max-width: 100%;
+}
+h3 + * { margin-top: 20px; }
+h4 { margin-top: 30px; }
+hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+i { opacity: 0.7; }
+
+footer {
+	margin: 60px 0;
+	padding-top: 30px;
+	border-top: 1px solid #ddd;
+}
+
+/* -----------------------------------------------------------------------------
+ * General
+ * -------------------------------------------------------------------------- */
+code {
+	background-color: #eee;
+	color: #888;
+}

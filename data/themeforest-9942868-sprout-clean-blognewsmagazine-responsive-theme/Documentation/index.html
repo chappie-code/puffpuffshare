@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>
+			Sprout Documentation
+		</title>
+		<!-- Bootstrap core CSS -->
+		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/document.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body data-spy="scroll" data-target="#sidebar" data-offset="100">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 header-container">
+						<img src="./css/logo.png" alt="">
+
+						<a class="header-button btn" href="http://envirra.com/themes/sprout/">Demo</a>
+						<a class="header-button btn" href="http://themeforest.net/item/sprout-clean-blognewsmagazine-responsive-theme/9942868?ref=envirra">Buy This Theme</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 sidebar-container">
+					<div id="sidebar">
+						<ul class="nav bs-sidenav">
+							<li><a href="#introduction">Introduction</a></li>
+							<li><a href="#getting-started">01. Getting Started</a></li>
+							<li><a href="#homepage-setup">02. Homepage Setup</a></li>
+							<li><a href="#setup-categories">03. Setup Categories</a></li>
+							<li><a href="#creating-new-post">04. Creating Posts</a></li>
+							<li><a href="#creating-static-page">05. Creating Pages</a></li>
+							<li><a href="#navigation-setup">06. Navigation Setup</a></li>
+							<li><a href="#site-authors">07. Site Authors</a></li>
+							<li><a href="#theme-options">08. Theme Options</a></li>
+							<li><a href="#sidebar-widgets">9. Sidebar &amp; Widgets</a></li>
+							<li><a href="#shortcodes">10. Shortcodes</a></li>
+							<li><a href="#customization">11. Advanced Customization</a></li>
+							<li><a href="#translation">12. Translation</a></li>
+							<li><a href="#troubleshooting">13. Troubleshooting</a></li>
+							<li><a href="#copyright-credits">Copyright &amp; Credits</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="introduction">Sprout Wordpress Theme</h1>
+							<h3>Documentation &amp; Usage</h3>
+						</div>
+
+						<p>First of all a huge <strong>THANK YOU</strong> for purchasing my WordPress Theme at Themeforest. If you have any questions that are beyond the scope of this help file, please join our Support Forums. If you’d like to start a new thread over there I’ll get any issues you’re experiencing sorted out. You can also follow me on Themeforest to keep track of all my theme updates and future themes. Thanks so much!</p>
+
+						<p>
+							Contact: <a href="http://themeforest.net/user/envirra#from">Envirra</a>
+							<br><a href="#troubleshooting" style="font-size: 12px;">Have a problem with theme?</a>
+						</p>
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="getting-started">01. Getting Started</h1>
+						</div>
+
+						<h3>Theme Requirements</h3>
+						<p>
+							In order to proceed with the theme installation, you must be running <strong>WordPress 3.8</strong> or higher, <strong>PHP 5.3</strong> or higher.
+						</p>
+
+						<hr>
+
+						<h3>Theme Download</h3>
+						<p>
+							Navigate to your downloads tab on Themeforest and find Sprout. Click the download button to see the two options. The <strong>Main Files</strong> contain everything (including documentation) and the <strong>Installable WordPress Theme</strong> is just the installable WordPress theme file. Please download the <strong>Installable WordPress Theme</strong> file for installation.
+								<img src="img/download-from-theme-forest.png" alt="">
+						</p>
+
+						<hr>
+
+						<h3>Theme Installation via Wordpress</h3>
+						<ol>
+							<li>Download the <strong>wordpress theme file</strong> from Themeforest.</li>
+							<li>Navigate to <code>Appearance → Themes</code>.</li>
+							<li>Click <code>Install Themes</code> and hit the <code>upload</code> button</li>
+							<li>Navigate to find the <code>sprout.zip</code> file on your computer and click <code>Install Now</code></li>
+							<li>Wait while the theme is uploaded and installed.</li>
+							<li>Activate the newly installed theme. Go to <code>Appearance → Themes</code> and activate it.</li>
+							<li>Click the link <code>Begin install plugins</code> to <strong>install</strong> and <strong>activate</strong> the required plugins.
+								<img src="img/install-required-plugins.png" alt="">
+							</li>
+						</ol>
+
+						<hr>
+
+						<h3>Theme Installation via FTP (alternate method)</h3>
+						<ol>
+							<li>Download the <strong>wordpress theme file</strong> from Themeforest.</li>
+							<li>Log into your hosting space via an FTP software.</li>
+							<li>Unzip the <code>press.zip</code> file and ONLY use the extracted Sprout theme folder.</li>
+							<li>Upload the extracted Sprout theme folder into <code>wp-content → themes</code> folder.</li>
+							<li>Activate the newly installed theme. Go to <code>Appearance → Themes</code> and activate it.</li>
+							<li>Install and activate the required plugins. Please see the previous method.</li>
+						</ol>
+
+						<hr>
+
+						<h3>Migrating From Another Theme</h3>
+						<p>If you are migration from a theme which used the native featured images functionality of WordPress. Please use the <a href="https://wordpress.org/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a> plugin to resize all the thumbnails for better image quality on your site. Click the link above and download the free plugin, and read through the steps it contains, it has all the information you need.</p>
+						
+						<hr>
+
+						<h3>How To Update The Theme</h3>
+						<p>You can update your theme via FTP or via WordPress. See the information below for each method. No matter what method you choose, you first need to download the new theme files from Themeforest.</p>
+
+						<div class="alert alert-info alert-dismissable">
+							Updating the theme files does not affected to the settings. If you're concerns about data and settings, Please backup your wordpress before update.
+						</div>
+
+						<br><strong>How To Update Your Theme Via FTP</strong>
+						<ol>
+							<li>Go to <code>/wp-content/themes</code> location and backup your <code>sprout</code> theme folder by saving it to your computer, or you can choose to simply delete it. Your content will not be lost.</li>
+							<li>Retrieve the <code>sprout.zip</code> file from your new Themeforest download (only theme file) and extract the file to get the <code>sprout</code> theme folder.</li>
+							<li>Then simply drag and drop the new Sprout theme folder into <code>/wp-content/themes</code> location. Choose to <code>Replace</code> the current one if you did not delete it.</li>
+						</ol>
+
+						<br><strong>How To Update Your Theme Via WordPress</strong>
+						<ol>
+							<li>You need to deactivate the current Sprout theme in the <code>Appearance → Themes</code> section by simply activating a different theme. Once you activate a different theme, you can delete the Sprout theme. Dont worry, your content will not be lost.</li>
+							<li>Retrieve the <code>sprout.zip</code> file from your new Themeforest download (only theme file) and extract the file to get the <code>sprout</code> theme folder.</li>
+							<li>Then simply upload the <code>sprout.zip</code> file in the <code>Appearance → Themes</code> section. Click on the <code>Install Themes</code> tab at the top and choose to upload the zip file.</li>
+							<li>Once it uploads, choose to activate it. You’re done!</li>
+						</ol>
+
+						<hr>
+
+						<h3>Plugins Installation</h3>
+						<p>We recommend you to install these plugins to get more from the theme.</p>
+						
+						<ul>
+							<li><strong>Sprout Shortcodes</strong> - This is our easy to use and intuitive shortcodes generator. Read more about our Shortcodes in chapter 10.</li>
+							<li><strong>Sprout Theme Options Panel</strong> - Enable theme options panel for your customization.</li>
+						</ul>
+
+						<p><br></p>
+
+						<p>Other plugins we recommend to you to install (optional):</p>
+
+						<ul>
+							<li><a href="https://github.com/envato/envato-wordpress-toolkit/archive/master.zip">Envato WordPress Toolkit</a> - WordPress toolkit for Envato Marketplace hosted items. Currently supports the following theme functionality: install, upgrade, &amp; backups during upgrade. After you've activate this plugin, Follow these steps
+
+								<ol>
+									<li>To establish an Envato Marketplace API connection navigate to the `Envato Toolkit` page and insert your Marketplace username and secret API key in the designated input fields.</li>
+									<li>To obtain your API Key, visit your “My Settings” page on any of the Envato Marketplaces.</li>
+									<li>Once the API connection has been established you will see a list of themes that can be auto installed or updated.</li>
+								</ol>
+							</li>
+
+							<li><a href="https://wordpress.org/plugins/w3-total-cache/">W3 Total Cache</a> - Easy Web Performance Optimization (WPO) using caching: browser, page, object, database, minify and content delivery network support.</li>
+
+							<li><a href="https://wordpress.org/plugins/bwp-minify/">Better WordPress Minify</a> - Allows you to minify your CSS and JS files for faster page loading for visitors.</li>
+
+							<li><a href="http://wordpress.org/plugins/custom-sidebars/">Custom sidebars</a> - Allows to create your own widgetized areas and custom sidebars, and select what sidebars to use for each post, page or archive page.</li>
+
+							<li><a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a> - Useful if your site already have a lot of content and images. Allows you to delete all old images size and regenerate the thumbnails for your image attachments.</li>
+
+							<li><a href="http://wordpress.org/plugins/simple-local-avatars/">Simple Local Avatars</a> - Adds an avatar upload field to user profiles. Generates requested sizes on demand just like Gravatar.</li>
+
+							<li><a href="http://wordpress.org/extend/plugins/contact-form-7/">Contact Form 7</a> - Contact Form 7 can manage multiple contact forms, plus you can customize the form and the mail contents flexibly with simple markup</li>
+
+							<li><a href="http://wordpress.org/plugins/wp-flexible-map/">WP Flexible Map</a> - Flexible Map allows you to add Google Maps to your WordPress website.</li>
+						</ul>
+
+						<hr>
+
+						<h3>Demo Content Import (optional)</h3>
+						<p>The theme comes with a .xml file containing demo content you can import into your WordPress site. This will help you get started, in case you are running on a fresh WP installation with no content at all.</p>
+
+						<div class="alert alert-warning alert-dismissable">
+						 Please do not import content on a WordPress installation that already has a lot of content. Or the very least, make a backup first. A catastrophic mess can be created.
+						</div>
+
+						<div class="alert alert-info alert-dismissable">
+						 The images which you seen on demo site are not included due to a license of images. A placeholder image will be a subtitute.
+						</div>
+
+						<br><p><strong>1-Click Demo Content Installation</strong></p>
+						<ol>
+							<li>Navigate to <code>Theme Options</code>.</li>
+							<li>Click on <code>Import Demo</code> button to start import. Please be patience as it will take quite some time. <strong>Do not interrupt it</strong>.</li>
+							<li>If you see some messages about failed to import media, It's ok to ignore that. But if you need all demo images to be shown on your site, Please import again.</li>
+							<li>If you see a dupicated menu items after importing, It's caused from importing several times. You can delete a duplicated menu item.</li>
+						</ol>
+
+						<div class="alert alert-info alert-dismissable">
+							After importing demo content, Please install the <code>Sprout Shortcodes</code> plugin. The homepage of demo content is required this plugin.
+						</div>
+
+						<br><p><strong>How to Import Demo Content by Manual</strong></p>
+						<ol>
+							<li>Make sure the plugin <a href="https://wordpress.org/plugins/wordpress-importer/">Wordpress Importer</a> is already installed and activated on your wordpress.</li>
+							<li>Navigate to <code>Tools → Import</code>.</li>
+							<li>Click on <code>WordPress</code> link (if the Importer plugin is not installed, install it now).</li>
+							<li>Select the <code>demo-content.xml</code> file located in the archive which you have downloaded from ThemeForest (from the All files archive) and click "Upload file and import" button.</li>
+							<li>On the next screen, under Assign Authors, select or enter a new username for each author.</li>
+							<li>Please be patience as it will take quite some time. <strong>Do not interrupt it</strong>.</li>
+							<li><i>(optional)</i> Once it's done, go to <code>Appearance → Menus → Manage Locations</code>. Select <code>Main Menu</code> as <code>Sample Main Menu</code>.</li>
+							<li>Your are done! Now your site is populated with demo content.</li>
+						</ol>
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="homepage-setup">02. Homepage Setup</h1>
+						</div>
+
+						<h3>Create a Page</h3>
+						<ol>
+							<li>Navigate to: <code>Pages → Add New</code>.</li>
+							<li>Enter the title for this page: "Home page" or "Home", whatever you like.</li>
+							<li>We prefer to use the <strong>VW Simple Page Composer</strong> to create the home page.</li>
+							<li>Click <code>Publish</code>.</li>
+						</ol>
+
+						<img src="img/page-composer_choose-template.png" alt="">
+
+						<hr>
+
+						<h3 id="simple-page-composer">Simple Page Composer</h3>
+
+						<p>After selecting the <code>VW Simple Page Composer</code> template (at <code>Page Template</code> dropdown) you will see the Page Composer interface which easily lets you create the homepage layout. To get started click on the <code>Add Section</code> button and you will see all the available sections you can add to your homepage.</p>
+
+						<img src="img/page-composer_add-section.png" alt="">
+
+						<ul>
+							<li><strong>Post Box</strong> - Display a posts from the selected category.</li>
+							<li><strong>Post Box with Sidebar</strong> - Display a posts from the selected category with sidebar</li>
+							<li><strong>Post Slider</strong> - Display a posts as a slider</li>
+							<li><strong>Full Page Link Section</strong> - Display big image as a link to the selected page.</li>
+							<li><strong>Custom Content</strong> - Display your content in theme style. Using shortcode in the content is allowed.</li>
+						</ul>
+
+						<hr>
+
+						<h3>Example Homepage Setup</h3>
+						<p>Please import demo content before try these examples.</p>
+
+						<h4>Sample Home 1</h4>
+						<p>Page Template: <code>VW Simple Page Composer</code>, Show Page Title: <code>No</code>.</p>
+						<ul>
+							<li><strong>Post Slider</strong> - Number of slide: <code>3</code>, Category: <code>All</code>, Posts Order: <code>Latest Featured Posts</code></li>
+
+							<li><strong>Post Box with Sidebar</strong> - Number of post: <code>6</code>, Category: <code>All</code>, Posts Order: <code>Latest Posts</code>, Layout: <code>Masonry grid - 2 columns</code>, Pagination: <code>Show</code></li>
+
+							<li><strong>Full Page Link Section</strong> - Page: <code>Sample Full Link Page</code> or any page that has a featured image.</li>
+
+							<li><strong>Post Box</strong> - Number of post: <code>5</code>, Category: <code>All</code>, Posts Order: <code>Latest Reviews</code>, Layout: <code>Carousel</code>, Pagination: <code>Hide</code></li>
+						</ul>
+
+						<h4>Sample Home 2</h4>
+						<p>Page Template: <code>VW Simple Page Composer</code>, Show Page Title: <code>No</code>.</p>
+
+						<ul>
+							<li><strong>Post Slider</strong> - Number of slide: <code>3</code>, Category: <code>All</code>, Posts Order: <code>Most Review Scores</code></li>
+
+							<li><strong>Post Box</strong> - Number of post: <code>3</code>, Category: <code>All</code>, Posts Order: <code>Most Review Scores</code>, Layout: <code>Box grid - columns</code>, Pagination: <code>Hide</code></li>
+
+							<li><strong>Post Box with Sidebar</strong> - Number of post: <code>4</code>, Category: <code>All</code>, Posts Order: <code>Latest Posts</code>, Layout: <code>Classic</code>, Pagination: <code>Show</code></li>
+
+							<li><strong>Full Page Link Section</strong> - Page: <code>Sample Full Link Page</code> or any page that has a featured image.</li>
+
+						</ul>
+
+						<hr>
+
+						<h3>Front Page Displays</h3>
+						<p>Now you have to tell WordPress wich page is your site homepage.</p>
+
+						<img src="img/reader-settings.png" alt="">
+
+						<ol>
+							<li>Navigate to: <code>Settings → Reading</code>. </li>
+							<li>In a <code>Front Page Displays</code> option, select <code>A static page</code>.</li>
+							<li>In a <code>Front page:</code> option, select your home page. In case of the demo content is already imported, Choose any of these pages <code>Sample Home 1</code>, <code>Sample Home 2</code>, <code>Sample Home 3</code> for a sample of homepage.</li>
+							<li>You are done! Now you have your home page.</li>
+						</ol>
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="setup-categories">03. Setup Categories</h1>
+						</div>
+
+						<p>Setting up categories for this theme is no different than ordinary category setup in WordPress, however, we provide some additional layout settings.</p>
+
+						<p>Go to <code>Posts → Categories</code> and fill in the info required. You will see an extra options as follows:</p>
+
+						<img src="img/category-options.png" alt="">
+
+						<ol>
+							<li><strong>Category Blog Layout</strong> - Select the layout for displaying a posts.
+								<ul>
+									<li>You can change the <code>Site Default</code> value at <code>Theme Options → Blog → Default Blog Layout</code></li>
+									<li>Selecting a <code>Custom</code> option, You need to create a custom layout. More details on topic <a href="#customization">Advanced Customization</a> <i>(The custom option is for advanced user who have a knowledge in coding).</i></li>
+								</ul>
+							</li>
+							<li><strong>Sidebar Position</strong> - Choose the position of sidebar on the category page.</li>
+							<li><strong>Left Sidebar</strong> - Choose the sidebar to be displayed as a left sidebar.</li>
+							<li><strong>Right Sidebar</strong> - Choose the sidebar to be displayed as a right sidebar.</li>
+						</ol>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="creating-new-post">04. Creating Posts</h1>
+						</div>
+
+						<p>Adding a new post is the same way as default WordPress installations (just navigate to <code>Posts → Add New</code>), however, there are extra options that might need explaining.</p>
+
+
+						<hr>
+
+						<h3>Post Options</h3>
+						<p>You will see the following post options when adding a post.</p>
+
+						<img src="img/post-options.png" alt="">
+
+						<ul>
+							<li><strong>Post Layout</strong> - Choose layout for displaying the post on the single post page.
+								<ul>
+									<li>You can change the <code>Site Default</code> value at <code>Theme Options → Blog → Default Post Layout</code></li>
+									<li>Selecting a <code>Custom</code> option, You need to create a custom layout. More details on topic <a href="#customization">Advanced Customization</a> <i>(The custom option is for advanced user who have a knowledge in coding).</i></li>
+								</ul>
+							</li>
+							<li><strong>Mark this post as featured</strong> - Check to make the current post featured. Featured Posts Slider section must be added on the Homepage edit page.</li>
+						</ul>
+
+						<p>Also, You will see a sidebar options on the right of screen.</p>
+						<img src="img/sidebar-options.png" alt="">
+						<ul>
+							<li><strong>Sidebar Position</strong> - Choose the sidebar position for this post.
+								<ul>
+									<li>You can change the <code>Default</code> value at <code>Theme Options → Blog → Default Sidebar Position</code></li>
+								</ul>
+							</li>
+							<li><strong>Left Sidebar</strong> - Choose the sidebar to be displayed as a left sidebar.</li>
+							<li><strong>Right Sidebar</strong> - Choose the sidebar to be displayed as a right sidebar.</li>
+						</ul>
+						<hr>
+
+						<h3>Featured Image</h3>
+						<p>While the theme can function without featured images, it's highly recommended that you add a featured image to each post. This not only makes your site/blog more lively but also improves user experience.</p>
+
+						<p>To set the featured image, use the WordPress normal method. Click <code>Set featured image</code> link in the <code>Featured Image</code> box and choose the image.</p>
+
+						<h4>Recommended Image Size</h4>
+						<p>Image size (dimensions) will depend on what type of layout you're using throughout your WordPress installation or per individual post basis. This image will not only be used on the post, but also on the category listing pages.</p>
+
+						<ul>
+							<li>Compatible with all layouts and full-width slider - <strong>1263 x 560</strong> minimum (width x height).</li>
+							<li>For posts that will only appears in homepage blocks and listings - <strong>750 x 375</strong> minimum.</li>
+						</ul>
+
+						<h4>Featured Image Credits</h4>
+						<p>You can insert a credit for a featured image by enter a credit message into a <code>Caption</code> field of image when you're selecting the image from Media Library.</p>
+
+						<hr>
+
+						<h3>Supported Post Formats</h3>
+						<p>We enabled four WordPress native post formats. Each format has it's own custom fields (except Standard) for simple content making.</p>
+
+						<img src="img/post-format.png" alt="">
+
+						<h4>Video Format</h4>
+						<p>Setup your post normally and set a featured image. There are 2 methods for embeding video in a post.</p>
+						<img src="img/post-format-video.png" alt="">
+						<ol>
+							<li><strong>Embed via video url</strong> - Copy the url of youtube or vimeo video page and paste the code in the <code>Video Source</code>.</li>
+							<li><strong>Embed video code</strong> - Copy the embed code of the video from YouTube, Vimeo or any other site that gives you video embed codes. Paste the code in the <code>Featured Video Code</code> box.</li>
+						</ol>
+
+						<div class="alert alert-info alert-dismissable">
+						Videos will be resized to fit the container.
+						</div>
+
+						<h4>Audio Format</h4>
+						<p>WordPress supports embedding into posts by default. An audio player will be inserted into the post.</p>
+
+						<ol>
+							<li>Click <code>Add Media</code> button.</li>
+							<li>Select your audio file. Once uploaded, make sure embed option is selected.</li>
+							<li>Insert and Publish.</li>
+						</ol>
+
+						<p>If you need to embed the external audio, There are 2 methods for embeding audio in a post.</p>
+						<img src="img/post-format-audio.png" alt="">
+						<ol>
+							<li><strong>Embed SoundCloud audio</strong> - Copy the url of SoundCloud audio page and paste the code in the <code>Sound Cloud Audio Source</code>.</li>
+							<li><strong>Embed audio code</strong> - Copy the embed code of the audio from SoundCloud or any other site that gives you audio embed codes. Paste the code in the <code>Featured Audio Code</code> box.</li>
+						</ol>
+
+						<h4>Gallery Format</h4>
+						<p>Setup your post normally and set a featured image. Next, Click <code>Select or Upload Images</code> button in the <code>Gallery Post Options</code> box and choose your images. You can re-arrange the order of image by dragging. The selected images will be displayed as image slider. </p>
+
+						<img src="img/post-format-gallery.png" alt="">
+
+						<p><strong>To insert a tiled gallery</strong>, Follow this steps:</p>
+						<ol>
+							<li>Click <code>Add Media</code> button just the above the editor. A media window will open.</li>
+							<li>Click <code>Create Gallery</code>. Upload images or select from Media Library. Click <code>Create a new gallery</code>.</li>
+							<li>Click <code>Insert gallery</code>.</li>
+							<li><i>(optional)</i> You can custom the tiled gallery layout at <code>Theme Options → Blog → Custom Tiled Gallery → Tiled Gallery Layout</code>.</li>
+							<li><i>(optional)</i> If you wish to use the gallery plugin like Jetpacks, You can turn of the built-in tiled gallery at <code>Theme Options → Blog → Custom Tiled Gallery → Enable Custom Tiled Gallery</code>.</li>
+						</ol>
+
+						<hr>
+
+						<h3>Review System</h3>
+						<p>You can add a review and score fetures to any post. To enable this feature locate the "Review Option" meta box under the editor and click the "Enable Review" checkbox. </p>
+
+						<img src="img/review-options.png" alt="">
+
+						<p>After the additional fields are open you can start creating your review.</p>
+						<ul>
+							<li><strong>Position</strong> - Choose position for showing the review box. When choosing the <code>Custom</code> position, You need to insert shortcode <code>[review]</code> into post content.</li>
+							<li><strong>Review Summary</strong> - Here you can add a line of text, which will describe why you gave this score to this post. Optional and can be left blank.</li>
+							<li><strong>Score Style</strong> - Choose style of score to be shown.</li>
+							<li><strong>Review Score</strong> - This feature gives you the ability to make a score with different parameters. Each row has two fields:
+								<ul>
+									<li>Label - The name of the parameter and a Score</li>
+									<li>Score - The score must between 0 to 100. </li>
+								</ul>
+
+								You can add up to 10 rows and the total score will be calculated automatically based on the breakdown scores.</li>
+						</ul>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="creating-static-page">05. Creating Pages</h1>
+						</div>
+
+						<p>Creating pages is a simple process. Please follow this steps:</p>
+
+						<ol>
+							<li>To start creating the pages navigate to <code>Pages → Add New</code>.</li>
+							<li>Enter the page title.</li>
+							<li>Enter the page content. You can also use a shortcode.</li>
+							<li>
+								<p><i>(optional)</i> Locate <code>Page Options</code> meta box on the page. The page options are the follows</p>
+
+								<img src="img/page-options.png" alt="">
+
+								<ul>
+									<li><strong>Page Subtitle</strong> - Enter a subtitle for this page.</li>
+								</ul>
+							</li>
+							<li><i>(optional)</i> To add a background image on the page title. Click the link <code>Set featured image</code> and choose the background image.</li>
+						</ol>
+
+						<hr>
+
+						<h3>Page Templates</h3>
+						<img src="img/page-composer_choose-template.png" alt="">
+						<ol>
+							<li><strong>Default</strong> - The default page has a container.</li>
+							
+							<li><strong>Full Width</strong> - Use this template to create a full width page.</li>
+
+							<li><strong>VW Simple Page Composer</strong> - This is a bare-bone template. Use it with page builder or when using advanced shortcodes to create the homepage. Please read more about using page composer at topic <a href="#simple-page-composer">Simple Page Composer</a></li>
+						</ol>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="navigation-setup">06. Navigation Setup</h1>
+						</div>
+
+						<h3>Existing Menu</h3>
+						<ol>
+							<li>Navigate to <code>Appearance → Menus</code> and click Add Menu.</li>
+							<li>In the <code>Manage Locations</code> tab, select the menu for each location.</li>
+							<li>Click <code>Save changes</code> button.</li>
+						</ol>
+
+						<hr>
+
+						<h3>Creating a New Menu</h3>
+						<p>Follow the next steps to define menus for each of the theme's menu locations. In each menu, you can add as many items you need.</p>
+
+						<ol>
+							<li>Navigate to <code>Appearance → Menus</code> and click Add Menu.</li>
+							<li>Give it a name in <code>Menu name</code> text box.</li>
+							<li>Using the Custom Links and Pages boxes at the left, add items to the menu and drag/drop to arrange them.</li>
+							<li>(optional) If you would like to use this menu in navigation, in the <code>Menu Settings</code> area, at the bottom, select the theme location for display this menu. Multiple theme location can be selected.</li>
+							<li>Click <code>Save Menu</code> button.</li>
+						</ol>
+
+						<hr>
+
+						<h3>Mega Menus</h3>
+						<p>Them theme comes with mega menu for Main menu. You can show the menu items with posts or show links in multiple columns.</p>
+
+						<h4>Add Mega Menu</h4>
+						<ol>
+							<li>Go to to <code>Appearance → Menus</code> and select your menu.</li>
+							<li>Expand the item you wish to add mega menu to by clicking the arrow icon.</li>
+							<li>Under <code>Mega Menu Type</code>, select <code>Category Mega Menu</code> or <code>4 Columns Links Mega Menu</code>.</li>
+							<li>Save Menu. Next configure sub-items (below).</li>
+						</ol>
+
+						<h4>Configure Mega Menu Items</h4>
+						<p>To make mega-menus work, you have one additional step of adding sub-items.</p>
+
+						<p>For <code>Category Mega Menu</code>, add a few sub-categories as sub-items (drag/drop them under a parent category in menu). Example:</p>
+						<img src="img/mega-menu-category.png" alt="">
+						<img src="img/mega-menu-category-sample.png" alt="">
+
+						<p>For <code>4 Columns Links Mega Menu</code>, This can be configured by adding Custom Links to be used as headings. You can use 4 of these headings. Then, a 3rd-level sub-items are added which are displayed as links, under each heading. Example:</p>
+						<img src="img/mega-menu-links.png" alt="">
+						<img src="img/mega-menu-links-sample.png" alt="">
+
+						<hr>
+
+						<h3>Sticky Navigation</h3>
+						<p>To enable sticky navigation for main menu, Navigate to <code>Theme Options → Site</code> and turn on the option <code>Enable Sticky Menu</code>. Click <code>Save Changes</code>.</p>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="site-authors">07. Site Authors</h1>
+						</div>
+
+						<h3>Author Avatar</h3>
+						<p>To make your author avatar to appear on your site, register at <a href="http://gravatar.com" target="_blank">gravatar.com</a> with the same email you registered at your wordpress site. Otherwise, You can install the <a href="https://wordpress.org/plugins/simple-local-avatars/" target="_blank">Simple Local Avatars plugin</a> to upload the avatar image directly to your site.</p>
+
+						<hr>
+
+						<h3>Author's Social Icons</h3>
+						<p>We added some extra fields to the user profile page to extend the information about the authors of your site. The added fields are: Social Profiles and a Custom Avatar upload instead of the default WP gravatar.</p>
+
+						<p>To add a new author and information that will be visible on the front, follow this steps:</p>
+
+						<ol>
+							<li>Navigate to: <code>Users → Add New</code></li>
+							<li><strong>Name</strong>: Select <code>Author</code> in <code>Role</code> dropdown and select desired name in <code>Display name publicly as</code> dropdown</li>
+							<li><strong>Contact Info</strong>: Type the website address and fill all the desired fields with the link to your social site.</li>
+							<li><strong>About the user</strong>: Fill in the Biographical Info</li>
+						</ol>
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="theme-options">08. Theme Options</h1>
+						</div>
+
+						<p>The Theme Options Panel helps you easily take control over your site, by allowing you to upload your logo and favicon, style the appearance of the theme with your custom colors, change fonts, turn features on and off, paste custom CSS and JS code, paste the Analytcs code without having to write any code.</p>
+
+						<p>To access the Theme Options panel, navigate to <code>Theme Options</code>.</p>
+
+						<hr>
+
+						<h3>Import / Export the Options</h3>
+						<p>After you create a set of settings, you might want to save your work. This is useful if you want to experiment with the options while keeping the old settings in case you need them again.</p>
+
+						<p>Navigate to the <code>Theme Options → Import / Export</code> tab and click the <code>Download</code> button. Once the download is finished, you will be able to restore your options by clicking the <code>Import from file</code> button, paste the data of downloaded file, and clicking the <code>Import</code> button.</p>
+
+						<hr>
+
+						<h3>Transfer Theme Options Data</h3>
+						<p>You can tranfer the saved options data between different installs by clicking the <code>Copy</code> button and copying the text inside the text box. To import data from another install, click the <code>Import from file</code> button and paste the data in the text box with the one from another install and click <code>Import</code>.</p>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="sidebar-widgets">9. Sidebar &amp; Widgets</h1>
+						</div>
+
+						<h3>Sidebars</h3>
+						<p>The theme comes with 5 sidebars areas which you can use above sidebars for quick start building your site</p>
+						<ul>
+							<li><strong>Blog Right Sidebar</strong> - Displayed on all posts, single post page, categories and archives</li>
+							<li><strong>Blog Left Sidebar</strong> - Displayed on all posts, single post page, categories and archives</li>
+							<li><strong>Page Sidebar</strong> - Displayed on all static pages</li>
+							<li><strong>Footer Sidebar 1-4</strong> - Displayed on footer.</li>
+						</ul>
+
+						<br>
+						<p>
+							If you need to create a custom sidebar, Please navigate to <code>Appearence → Sidebars</code> and click <code>Add new sidebar</code>.
+						</p>
+
+						<hr>
+
+						<h3>Widgets</h3>
+						<p>The theme comes with 9 custom widgets:</p>
+						<ul>
+							<li><strong>Sprout: Author</strong> - Show an information of authors.</li>
+							<li><strong>Sprout: Author List</strong> - Show a list of authors.</li>
+							<li><strong>Sprout: Categories</strong> - Show a list of category.</li>
+							<li><strong>Sprout: FeedBurner</strong> - Show a subscription form for FeedBurner.</li>
+							<li><strong>Sprout: Login</strong> - Show a login form and member profile area.</li>
+							<li><strong>Sprout: Popular, Recent, Comments</strong> - Show posts in tabular layout.</li>
+							<li><strong>Sprout: Popular Posts</strong> - Show a popular posts.</li>
+							<li><strong>Sprout: Posts</strong> - Show posts from selected category.</li>
+							<li><strong>Sprout: Social Counter</strong> - Show counter for social networks.</li>
+						</ul>
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="shortcodes">10. Shortcodes</h1>
+						</div>
+
+						<p>We have created a very nice and lightweight shortcode generator with very understandable and intuitive interface.</p>
+
+						<p>After installing the <strong>Sprout Shortcodes</strong> plugin, navigate to any page or post where you want to add the shortcode. You will see a new button <code>[sc]</code> was added to the editor. Click on the button and you'll see the dropdown with all available shortcodes.</p>
+
+						<img src="img/shortcode-button.png" alt="">
+
+						<p>To start generating the shortcodes, make sure your mouse cursor is blinking inside the editor and click on one of the shortcode name. For some shortcodes, The shortcode will be inserted immediately. But for some shortcodes, The shortcode options will be shown. You can set the shortcode options and click <code>Insert Shortcode</code>.</p>
+
+						<hr>
+
+						<h3>Available Shortcodes</h3>
+						<p>If you wish to manually use the shortcodes (advanced users only), the guide below offers some insight into each.</p>
+
+						<h4>404</h4>
+						<p>Show the number <strong>404</strong> for 404 page.</p>
+						<pre>[404]</pre>
+
+						<h4>Accordions</h4>
+						<pre>[accordions]
+	[accordion title='Title Here']Content Here[/accordion]
+	[accordion title='Title Here']Content Here[/accordion]
+[/accordions]</pre>
+						<p>The <code>[accordion]</code> shortcode has the following options:
+							<ul>
+								<li><strong>title</strong> - The title of accordion.</li>
+								<li><strong>icon</strong> - The icon name with no prefix <code>icon-</code>, Example <code>elusive-right-open</code>. The full icon listing is at <code>Theme Options → Font Icons</code></li>
+								<li><strong>open</strong> - Force open the accordion item on page load. The value can be <code>true</code>, <code>false</code>. The default is <code>false</code>.</li>
+							</ul>
+						</p>
+
+						<h4>Author</h4>
+						<pre>[author title="Editor"]</pre>
+						<p>The <code>[author]</code> shortcode has the following options:
+							<ul>
+								<li><strong>title</strong> - The title of author.</li>
+								<li><strong>user</strong> - User ID or Username. If not specified, The author of current page/post will be displayed.</li>
+							</ul>
+						</p>
+
+						<h4>Button</h4>
+						<pre>[button style='red' icon='iconic-umbrella']Button Name[/button]</pre>
+						<p>The <code>[button]</code> shortcode has the following options:
+							<ul>
+								<li><strong>style</strong> - The style name of button. The value can be <code>primary</code>, <code>black</code>, <code>orange</code>, <code>red</code>, <code>yellow</code>, <code>blue</code>, <code>green</code>, <code>purple</code>, <code>pink</code></li>
+								<li><strong>icon</strong> - The icon name with no prefix <code>icon-</code>, Example <code>elusive-right-open</code>. The full icon listing is at <code>Theme Options → Font Icons</code></li>
+								<li><strong>target</strong> - A target name. Use <code>_blank</code> for open link in new window.</li>
+								<li><strong>url</strong> - A url for link.</li>
+								<li><strong>fullwidth</strong> - Expand the button to be a full-width. The value can be <code>true</code>, <code>false</code>. The default is <code>false</code>.</li>
+							</ul>
+						</p>
+
+						<h4>Row &amp; Columns</h4>
+						<pre>[row]
+	[column size='1/2']Your Content Here[/column]
+	[column size='1/2']Your Content Here[/column]
+[/row]</pre>
+						<p>The <code>[column]</code> has the following options:
+							<ul>
+								<li><strong>size</strong> - Size of column. The value can be <code>1/1</code>, <code>1/2</code>, <code>1/3</code>, <code>2/3</code>, <code>1/4</code>, <code>3/4</code>, <code>1/5</code>, <code>2/5</code>, <code>3/5</code>.</li>
+							</ul>
+						</p>
+
+						<h4>Custom Font</h4>
+						<p>This shortcode is to apply the custom font in the content. Please upload a font file at <code>Theme Options > Custom Fonts</code> before using this shortcode.</p>
+						<pre>[customfont1]Text[/customfont1]
+[customfont2]Text[/customfont2]</pre>
+
+						<h4>Dropcap</h4>
+						<pre>[dropcap style='standard']A[/dropcap]</pre>
+						<p>The <code>[dropcap]</code> shortcode has the following options:
+							<ul>
+								<li><strong>style</strong> - The value can be <code>standard</code>, <code>circle</code>, <code>box</code>.</li>
+							</ul>
+						</p>
+
+						<h4>Emphasize</h4>
+						<pre>[em]Text Here[/em]</pre>
+						<p>You can also use this shortcode in widget title.</p>
+
+						<h4>Gap</h4>
+						<pre>[gap]</pre>
+						<p>The <code>[gap]</code> shortcode has the following options:
+							<ul>
+								<li><strong>size</strong> - The number in pixels. Default value is <code>30</code>.</li>
+							</ul>
+						</p>
+
+						<h4>Infomation Box</h4>
+						<pre>[infobox title='Title Here']Content Here[/infobox]</pre>
+
+						<h4>List</h4>
+						<pre>[list]
+	[list_item icon="iconic-right-circle"]Content Here[/list_item]
+[/list]</pre>
+						<p>The <code>[list]</code> shortcode has the following options:
+							<ul>
+								<li><strong>icon</strong> - The icon name with no prefix <code>icon-</code>, Example <code>elusive-right-open</code>. The full icon listing is at <code>Theme Options → Font Icons</code>.</li>
+							</ul>
+						</p>
+
+						<h4>Logo</h4>
+						<p>Show the site logo that uploaded at <code>Theme Options → Logo/Favicon</code></p>
+						<pre>[logo width='']</pre>
+						<p>The <code>[logo]</code> shortcode has the following options:
+							<ul>
+								<li><strong>width</strong> - The width of logo, The value must be a number.</li>
+							</ul>
+						</p>
+
+						<h4>Mark</h4>
+						<p>Hilight the text.</p>
+						<pre>[mark style='yellow']Marked Text Here[/mark]</pre>
+						<p>The <code>[mark]</code> shortcode has the following options:
+							<ul>
+								<li><strong>style</strong> - The value can be <code>yellow</code>, <code>grey</code>, <code>dark</code>.</li>
+							</ul>
+						</p>
+
+						<h4>Posts</h4>
+						<pre>[posts title='Title Here']</pre>
+						<p>The <code>[posts]</code> shortcode has the following options:
+							<ul>
+								<li><strong>title</strong> - A title text.</li>
+								<li><strong>cat</strong> - A category ID of posts.</li>
+								<li><strong>cat_exclude</strong> - A category ID of post to be excluded from the result. Mutiple IDs must be separated by <code>,</code> <i>(comma)</i>.</li>
+								<li><strong>tag</strong> - A slug tag of posts to be included in the result, Multiple tags must be separated by <code>,</code> <i>(comma)</i>.</li>
+								<li><strong>format</strong> - Post format of posts in the result. The value can be <code>video</code>, <code>audio</code>, <code>gallery</code>.</li>
+								<li><strong>layout</strong> - A layout name for showing the posts. The value can be <code>classic</code>, <code>slider-carousel</code>, <code>box-grid-3-col</code>, <code>block-grid-2-col</code>, <code>block-grid-3-col</code>, <code>masonry-grid-2-col</code>, <code>masonry-grid-3-col</code>, <code>custom-1</code>, <code>custom-2</code>, <code>custom-3</code>, <code>custom-4</code>.</li>
+								<li><strong>count</strong> - A number of posts to be shown.</li>
+								<li><strong>offset</strong> - A number of the first posts to be skipped.</li>
+								<li><strong>order</strong> - An order of posts. The value can be <code>latest</code>, <code>random</code>, <code>featured</code>, <code>latest_gallery</code>, <code>latest_video</code>, <code>latest_audio</code>, <code>latest_reviews</code>, <code>most_viewed</code>, <code>most_review_score</code>, .</li>
+								<li><strong>sort</strong> - Designates the ascending or descending order. The value can be <code>ASC</code>, <code>DESC</code> .</li>
+							</ul>
+						</p>
+
+						<h4>Pricing Table</h4>
+						<pre>[pricing_table]
+
+[pricing_item title='Basic' price='50' currency='$' per='/mo.' button='BUY' link='http://themeforest.net/user/envirra/portfolio?ref=envirra' featured=''] An item details [/pricing_item]
+
+[pricing_item title='Professional' price='150' currency='$' per='/mo.' button='BUY' link='http://themeforest.net/user/envirra/portfolio?ref=envirra' featured='true'] An item details [/pricing_item]
+
+[pricing_item title='Unlimited' price='200' currency='$' per='/mo.' button='BUY' link='http://themeforest.net/user/envirra/portfolio?ref=envirra' featured=''] An item details [/pricing_item]
+
+[/pricing_table]
+</pre>
+						<p>The <code>[pricing_item]</code> shortcode has the following options:
+							<ul>
+								<li><strong>title</strong> - A title of item.</li>
+								<li><strong>price</strong> - A price of item.</li>
+								<li><strong>currency</strong> - A currency of item.</li>
+								<li><strong>per</strong> - A cycle of billing.</li>
+								<li><strong>button</strong> - A button name for this item.</li>
+								<li><strong>link</strong> - A link of button.</li>
+								<li><strong>featured</strong> - Set the value to <code>true</code> to mark this item as featured.</li>
+							</ul>
+						</p>
+
+						<h4>Quote</h4>
+						<pre>[quote]Content Here[/quote]</pre>
+
+						<h4>Tabs</h4>
+						<pre>[tabs]
+	[tab title="Responsive" icon="iconic-doc"]CONTENT HERE[/tab]
+[/tabs]</pre>
+						<p>The <code>[tab]</code> shortcode has the following options:
+							<ul>
+								<li><strong>title</strong> - A title.</li>
+								<li><strong>icon</strong> - The icon name with no prefix <code>icon-</code>, Example <code>elusive-right-open</code>. The full icon listing is at <code>Theme Options → Font Icons</code>.</li>
+							</ul>
+						</p>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="customization">11. Advanced Customization</h1>
+						</div>
+
+						<p>There are two ways to customize the theme without changing it's core files.</p>
+
+						<div class="alert alert-warning alert-dismissable">
+							Please note that any bugs from theme modification and the theme modification are <strong>not included</strong> in the support.
+						</div>
+
+						<h4>1. Using Theme Options Panel</h4>
+						<p>Please navigate to <code>Theme Options → Custom JS/CSS</code> and insert your own CSS and JS here.</p>
+
+						<h4>2. Using Child Theme</h4>
+						<p>The theme comes with it's Child Theme. If you want more complex cutomization of the parent theme and change the files, layout, html, objects order this way is even better. To start using child follow this steps:</p>
+
+						<ol>
+							<li>Navigate to <code>Appearence → Themes</code></li>
+							<li>Click the second tab "Install Themes" at the top and click the link <code>Upload</code></li>
+							<li>Now locate the <code>sprout-child.zip</code> inside the <code>/Theme Files</code> folder which you have downloaded from ThemeForest and double click on that file.</li>
+							<li>Click the <code>Install Now</code> button and after the theme is installed, Activate it</li>
+						</ol>
+
+						<p>That is it, now the child theme is ready. You can open the <code>/sprout-child/style.css</code> file and write your CSS there. It will override the default the CSS from the parent theme. You can also copy any file from the parent theme, put it inside the child them and make the changes.</p>
+
+						<div class="alert alert-warning alert-dismissable">
+							It's important not to touch the theme core files because every time we will update the theme, you will loose you changes. Using child theme is recommended.
+						</div>
+
+						<hr>
+
+						<h3>Adding a Custom Blog Layout</h3>
+						<p>We prepared a custom layout option for displaying a posts on category page and blog page. We call it the "Post Box". Adding a custom blog layout is very easy, Just edit or override these template files from child theme:</p>
+
+						<ul>
+							<li>For <strong>Custom 1</strong> option - The template file of layout is <code>/sprout/templates/post-loop/loop-custom-1.php</code></li>
+							<li>For <strong>Custom 2</strong> option - The template file of layout is <code>/sprout/templates/post-loop/loop-custom-2.php</code></li>
+							<li>For <strong>Custom 3</strong> option - The template file of layout is <code>/sprout/templates/post-loop/loop-custom-3.php</code></li>
+							<li>For <strong>Custom 4</strong> option - The template file of layout is <code>/sprout/templates/post-loop/loop-custom-4.php</code></li>
+						</ul>
+
+						<hr>
+
+						<h3>Adding a Custom Post Layout</h3>
+						<p>You can create a custom post layout in the same way as adding a custom blog layout. The template files as follows:</p>
+
+						<ul>
+							<li>For <strong>Custom 1</strong> option - The template file of layout is <code>/sprout/single_custom_1.php</code></li>
+							<li>For <strong>Custom 2</strong> option - The template file of layout is <code>/sprout/single_custom_2.php</code></li>
+						</ul>
+
+						<hr>
+
+						<h3>Adding a Custom Site Top/Bottom Bar</h3>
+						<p>You can create a custom site top bar or site bottom bar in the same way as adding a custom blog layout. The template files as follows:</p>
+
+						<ul>
+							<li>For <strong>Site Top Bar - Custom 1</strong> option - The template file of layout is <code>/sprout/templates/top-bar-custom-1.php</code></li>
+							<li>For <strong>Site Top Bar - Custom 2</strong> option - The template file of layout is <code>/sprout/templates/top-bar-custom-2.php</code></li>
+							<li>For <strong>Site Bottom Bar - Custom 1</strong> option - The template file of layout is <code>/sprout/templates/bottom-bar-custom-1.php</code></li>
+							<li>For <strong>Site Bottom Bar - Custom 2</strong> option - The template file of layout is <code>/sprout/templates/bottom-bar-custom-2.php</code></li>
+						</ul>
+
+						<hr>
+
+						<h3>Additional Information For Developers</h3>
+						<p>This section will give you an information for playing with the code of theme. </p>
+
+						<ul>
+							<li>You can find the <strong>action name</strong> that available in this theme by searching the word <code>vw_action_</code></li>
+							<li>You can find the <strong>filter name</strong> that available in this theme by searching the word <code>vw_filter_</code></li>
+							<li>You can find the <strong>constant name</strong> that can be configured by searching the word <code>VW_CONST_</code>. Some constant can be used for configuration but some constant is just a toggle for disable some part.</li>
+							<li>All template files that can be overriden from child theme are stored in <code>/sprout/templates/*</code>. You can copy file from the parent theme and placed in the child theme at the same folder structure.</li>
+							<li>You can override the theme functions from child theme by define the same function name (and same parameters) in the file <code>/sprout-child/functions.php</code></li>
+						</ul>
+						
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="translation">12. Translation &amp; Internalization</h1>
+						</div>
+
+						<p>This theme is fully translation ready! The translation files .po/.mo are located in <code>/sprout/languages</code> in the Themes folder. We've included English Translation right away.</p>
+
+						<br><p><strong>To translate the theme, just follow these steps:</strong></p>
+						<ol>
+							<li>Duplicate the <code>en_EN.po</code> file and rename it to your language (for German it's <code>de_DE.po</code>)</li>
+							<li>Edit the new .po file using POEdit (<a href="http://www.poedit.net/">http://www.poedit.net/</a>)</li>
+							<li>Hit save, a new .mo file should be created.</li>
+							<li>Make sure that in the root of your WordPress Installation in the <code>wp-config.php</code> file your language is defined like this: <br>
+								<br><pre>define('WPLANG', 'de_DE');</pre>
+								<br>You need to change the code <code>de_DE</code> to you <a href="http://www.gnu.org/software/gettext/manual/gettext.html#Language-Codes">language and country code</a>.
+							</li>
+						</ol>
+						
+						<br><p><strong>To rename different Words, like "Read More", "Comments" etc, just follow these steps:</strong></p>
+						<ol>
+							<li>Open <code>en_EN.po</code> file using POEdit (<a href="http://www.poedit.net/">http://www.poedit.net/</a>)</li>
+							<li>Rename the Words you want to rename.</li>
+							<li>Hit save, the .mo file should be updated.</li>
+							<li>Make sure that in the root of your WordPress Installation in the <code>wp-config.php</code> file your language is defined like this: <br>
+								<br><pre>define('WPLANG', 'en_EN');</pre>
+							</li>
+						</ol>
+
+						<br>
+						<p>Instead of using POEdit, You can use the localization plugin like <a href="http://wordpress.org/plugins/codestyling-localization/">Codestyling Localization</a>.</p>
+						<br>
+						<div class="alert alert-info alert-dismissable">
+						 We constantly develop new features, so after downloading a new Version we recommend to check that everything is translated correct.
+						</div>
+
+						<hr>
+
+						<h3>Your Language &amp; Localization</h3>
+						<p>After translating, you may wish to use the correct locale to translate and localize your WordPress installation completely. Refer to <a href="http://codex.wordpress.org/Installing_WordPress_in_Your_Language">Installing WordPress In Your Language</a> at WordPress Codex to learn how to.</p>
+
+						<hr>
+
+						<h3>RTL Version</h3>
+						<p>For languages that read from right-to-left unlike English which is left-to-right, Sprout will automatically switch to an RTL style, as long as you it's in your language and uses the correct locale (as explained above).</p>
+						
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="troubleshooting">Troubleshooting</h1>
+						</div>
+
+						<p>
+							When you've found the problem with theme, Please try the following steps for a basic troubleshooting:
+						</p>
+						<ul>
+							<li>Please make sure you're using the latest version of theme.</li>
+							<li>Refresh the browser to make sure the problem is not from browser's cache. Otherwise, Try it on other browser.</li>
+							<li>Disable all plugins, including caching plugins to make sure the problem is no from the third-party plugin.</li>
+						</ul>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="copyright-credits">Copyright &amp; Credits</h1>
+						</div>
+
+						<p>These images are not included in the demo file.</p>
+
+						<h3>Images used on demo site</h3>
+						<ul>
+							<li><a href="https://www.flickr.com/photos/garrett-ewp/" target="_blank">Garrett</a></li>
+							<li><a href="https://www.flickr.com/photos/ashapagdiwalla/" target="_blank">Asha Pagdiwalla</a></li>
+							<li><a href="https://www.flickr.com/photos/basheertome/" target="_blank">Basheer Tome</a></li>
+							<li><a href="https://www.flickr.com/photos/angeloangelo/" target="_blank">Angelo DeSantis</a></li>
+							<li><a href="https://www.flickr.com/photos/withwind/" target="_blank">Tella Chen</a></li>
+							<li><a href="https://www.flickr.com/photos/markjsebastian/" target="_blank">Mark Sebastian</a></li>
+							<li><a href="https://www.flickr.com/photos/diekatrin/" target="_blank">Katrin Morenz</a></li>
+							<li><a href="https://www.flickr.com/photos/festivalculturadigitalbr/" target="_blank">Festival CulturaDigital.Br</a></li>
+							<li><a href="https://www.flickr.com/photos/zachd1_618/" target="_blank">Zach Dischner</a></li>
+							<li><a href="https://www.flickr.com/photos/needoptic/" target="_blank">Aurimas</a></li>
+							<li><a href="https://www.flickr.com/photos/tomasfano/" target="_blank">Tomás Fano</a></li>
+							<li><a href="https://www.flickr.com/photos/nicokaiser/" target="_blank">Nico Kaiser</a></li>
+							<li><a href="https://www.flickr.com/photos/stone-soup/" target="_blank">jules</a></li>
+							<li><a href="https://www.flickr.com/photos/martindew/" target="_blank">Martin de Witte</a></li>
+							<li><a href="https://www.flickr.com/photos/robertotaddeo/" target="_blank">Roberto Taddeo</a></li>
+							<li><a href="https://www.flickr.com/photos/philhearing/" target="_blank">philhearing</a></li>
+							<li><a href="https://picjumbo.com" target="_blank">picjumbo.com</a></li>
+							<li><a href="https://foodiesfeed.com" target="_blank">foodiesfeed.com</a></li>
+						</ul>
+
+						<br><div class="alert alert-info">
+						1. All images have the <a href="http://creativecommons.org/licenses/by/2.0/deed.en" target="_blank">Attribution 2.0 Generic (CC BY 2.0)</a> license.<br>
+						2. None of these images are included in demo-content.xml
+						</div>
+
+						<hr>
+
+						<h3>Components</h3>
+						<ul>
+							<li>Custom Scripts</li>
+							<li><a href="http://www.advancedcustomfields.com/" target="_blank">Advanced Custom Fields</li>
+							<li><a href="https://github.com/rilwis/meta-box" target="_blank">RW Metabox</li>
+							<li><a href="http://reduxframework.com" target="_blank">Redux Framework</li>
+						
+							<li><a href="http://brutaldesign.github.io/swipebox/" target="_blank">Swipbox</a></li>
+							<li><a href="https://github.com/karacas/imgLiquid" target="_blank">imgLiquid</a></li>
+							<li><a href="http://bxslider.com/" target="_blank">bxslider</a></li>
+							<li><a href="http://mmenu.frebsite.nl/" target="_blank">mmenu</a></li>
+							<li><a href="http://fitvidsjs.com/" target="_blank">FitVids</a></li>
+							<li><a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a></li>
+							<li><a href="https://github.com/srobbin/jquery-backstretch" target="_blank">Backstretch</a></li>
+							<li><a href="http://cherne.net/brian/resources/jquery.hoverIntent.html" target="_blank">hoverIntent</a></li>
+							<li><a href="http://modernizr.com/" target="_blank">Modernizr</a></li>
+							<li><a href="http://stickyjs.com/" target="_blank">Sticky</a></li>
+							<li><a href="https://github.com/morr/jquery.appear" target="_blank">jQuery.appear</a></li>
+							<li><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a></li>
+							<li><a href="http://users.tpg.com.au/j_birch/plugins/superfish/" target="_blank">Superfish</a></li>
+						</ul>
+					</div><!-- /doc-section -->
+
+					<footer>
+						<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+						<strong>Envirra</strong>
+					</footer>
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- /container -->
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="./js/jquery-1.10.1.min.js"></script>
+		<script src="./bootstrap/js/bootstrap.min.js"></script>
+		<script src="./js/document.js"></script>
+	</body>
+</html>

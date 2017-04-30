@@ -1,0 +1,71 @@
+.bx-controls-direction i:before,
+.vw-post-box-read-more i:before,
+.vw-page-navigation-pagination i:before {
+    transform: scaleX(-1);
+}
+
+.vw-post-box .vw-post-format-icon.vw-video-icon i {
+    padding-right: 0;
+}
+
+.vw-review-item-title > span {
+    float: right;
+}
+
+.vw-author-socials .icon-social-twitter:before {
+    margin-right: 0;
+}
+
+.woocommerce .woocommerce-product-rating .star-rating,
+.woocommerce-page .woocommerce-product-rating .star-rating {
+    float: right;
+}
+
+.woocommerce #content div.product div.images,
+.woocommerce div.product div.images,
+.woocommerce-page #content div.product div.images,
+.woocommerce-page div.product div.images {
+    float: right;
+}
+
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary {
+    float: left;
+}
+
+.woocommerce-Reviews-title span {
+    display: inline-block;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    margin-left: 3.8%;
+    margin-right: 0;
+}
+
+.woocommerce ul.products li.last,
+.woocommerce-page ul.products li.last {
+    margin-left: 0;
+}
+
+.woocommerce a.button.loading:after,
+.woocommerce button.button.loading:after,
+.woocommerce input.button.loading:after,
+.woocommerce #respond input#submit.loading:after {
+    left: auto !important;
+    right: 1em;
+}
+
+.bbp-breadcrumb * {
+    display: inline-block;
+}
+
+.bbp-breadcrumb-sep {
+    transform: scaleX(-1);
+}
+
+.bbp-topic-started-by a {
+    display: inline-block;
+}
