@@ -23,13 +23,13 @@
 define('DB_NAME', 'puffpuff');
 
 /** MySQL database username */
-define('DB_USER', 'puffpuff_root');
+define('DB_USER', 'admin');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'SvScgEBFmta5');
+define('DB_PASSWORD', 'UlxP4ak3vmp5sS9AYSwJ');
 
 /** MySQL hostname */
-define('DB_HOST', 'puffpuffshare-db.cafck54lrxjo.us-west-2.rds.amazonaws.com');
+define('DB_HOST', 'puffpuffshare.cafck54lrxjo.us-west-2.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
